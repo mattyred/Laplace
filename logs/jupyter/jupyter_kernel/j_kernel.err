@@ -1,0 +1,40 @@
+[I 2025-11-25 14:33:23.635 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-11-25 14:33:23.642 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-11-25 14:33:23.648 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-11-25 14:33:23.654 ServerApp] notebook | extension was successfully linked.
+[I 2025-11-25 14:33:24.159 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-11-25 14:33:24.190 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-11-25 14:33:24.192 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-11-25 14:33:24.196 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-11-25 14:33:24.207 LabApp] JupyterLab extension loaded from /ibex/user/rossom/conda-environments/scalinglaws/lib/python3.11/site-packages/jupyterlab
+[I 2025-11-25 14:33:24.207 LabApp] JupyterLab application directory is /ibex/user/rossom/conda-environments/scalinglaws/share/jupyter/lab
+[I 2025-11-25 14:33:24.208 LabApp] Extension Manager is 'pypi'.
+[I 2025-11-25 14:33:24.281 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-11-25 14:33:24.286 ServerApp] notebook | extension was successfully loaded.
+[I 2025-11-25 14:33:24.287 ServerApp] Serving notebooks from local directory: /ibex/user/rossom/Laplace
+[I 2025-11-25 14:33:24.287 ServerApp] Jupyter Server 2.17.0 is running at:
+[I 2025-11-25 14:33:24.287 ServerApp] http://gpu109-16-r:10000/tree?token=4b14de14583c6061ea7a4e67b0b9b5d50e464faaeea1d4b1
+[I 2025-11-25 14:33:24.287 ServerApp]     http://127.0.0.1:10000/tree?token=4b14de14583c6061ea7a4e67b0b9b5d50e464faaeea1d4b1
+[I 2025-11-25 14:33:24.287 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2025-11-25 14:33:24.298 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/rossom/.local/share/jupyter/runtime/jpserver-2817881-open.html
+    Or copy and paste one of these URLs:
+        http://gpu109-16-r:10000/tree?token=4b14de14583c6061ea7a4e67b0b9b5d50e464faaeea1d4b1
+        http://127.0.0.1:10000/tree?token=4b14de14583c6061ea7a4e67b0b9b5d50e464faaeea1d4b1
+[I 2025-11-25 14:33:24.440 ServerApp] Skipped non-installed server(s): basedpyright, bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyrefly, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-11-25 14:33:36.000 ServerApp] 302 GET / (@10.109.65.13) 0.48ms
+[I 2025-11-25 14:33:36.008 JupyterNotebookApp] 302 GET /tree? (@10.109.65.13) 0.61ms
+[I 2025-11-25 14:33:37.130 ServerApp] 302 GET / (@10.109.65.13) 0.45ms
+[I 2025-11-25 14:33:37.132 JupyterNotebookApp] 302 GET /tree? (@10.109.65.13) 0.41ms
+[I 2025-11-25 14:33:39.319 ServerApp] 302 GET / (@10.109.65.13) 0.36ms
+[I 2025-11-25 14:33:39.323 JupyterNotebookApp] 302 GET /tree? (@10.109.65.13) 0.43ms
+[I 2025-11-25 14:33:39.376 ServerApp] Kernel started: a9329ba4-fb8f-4a27-8a87-3eef453848e6
+[I 2025-11-25 14:33:40.137 ServerApp] Connecting to kernel a9329ba4-fb8f-4a27-8a87-3eef453848e6.
+[W 2025-11-25 14:33:40.138 ServerApp] The websocket_ping_timeout (90000) cannot be longer than the websocket_ping_interval (30000).
+    Setting websocket_ping_timeout=30000
+[I 2025-11-25 14:51:01.932 ServerApp] Kernel restarted: a9329ba4-fb8f-4a27-8a87-3eef453848e6
+[I 2025-11-25 14:51:01.935 ServerApp] Starting buffering for a9329ba4-fb8f-4a27-8a87-3eef453848e6:0827ecf7-130e-4f0f-b4ae-ec779d10acf6
+[I 2025-11-25 14:51:01.940 ServerApp] Connecting to kernel a9329ba4-fb8f-4a27-8a87-3eef453848e6.
+[I 2025-11-25 14:51:01.940 ServerApp] Restoring connection for a9329ba4-fb8f-4a27-8a87-3eef453848e6:0827ecf7-130e-4f0f-b4ae-ec779d10acf6

@@ -12,7 +12,7 @@ from curvlinops import (
     HessianLinearOperator,
     KFACLinearOperator,
 )
-from curvlinops._base import _LinearOperator
+from curvlinops._torch_base import PyTorchLinearOperator
 from torch import nn
 
 from laplace.curvature import CurvatureInterface, EFInterface, GGNInterface
@@ -40,7 +40,7 @@ class CurvlinopsInterface(CurvatureInterface):
         raise NotImplementedError
 
     @property
-    def _linop_context(self) -> type[_LinearOperator]:
+    def _linop_context(self) -> type[PyTorchLinearOperator]:
         raise NotImplementedError
 
     @staticmethod
@@ -97,7 +97,7 @@ class CurvlinopsInterface(CurvatureInterface):
             # Defaults to `mc_samples=1` and `kfac_approx='expand'.
             **kwargs,
         )
-        linop._compute_kfac()
+        linop.compute_kronecker_factors()
 
         kron = self._get_kron_factors(linop)
         kron = self._rescale_kron_factors(kron, len(y), N)
@@ -164,7 +164,7 @@ class CurvlinopsGGN(CurvlinopsInterface, GGNInterface):
         return FisherType.MC if self.stochastic else FisherType.TYPE2
 
     @property
-    def _linop_context(self) -> type[_LinearOperator]:
+    def _linop_context(self) -> type[PyTorchLinearOperator]:
         return FisherMCLinearOperator if self.stochastic else GGNLinearOperator
 
 
@@ -176,7 +176,7 @@ class CurvlinopsEF(CurvlinopsInterface, EFInterface):
         return FisherType.EMPIRICAL
 
     @property
-    def _linop_context(self) -> type[_LinearOperator]:
+    def _linop_context(self) -> type[PyTorchLinearOperator]:
         return EFLinearOperator
 
 
@@ -184,5 +184,5 @@ class CurvlinopsHessian(CurvlinopsInterface):
     """Implementation of the full Hessian using Curvlinops."""
 
     @property
-    def _linop_context(self) -> type[_LinearOperator]:
+    def _linop_context(self) -> type[PyTorchLinearOperator]:
         return HessianLinearOperator
